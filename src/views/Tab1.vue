@@ -1,28 +1,21 @@
 <template>
   <ion-page>
     <ion-header>
-      <ion-toolbar>
-        <ion-title>Tab 1</ion-title>
+      <ion-toolbar color="white">
+        <ion-title>This has a sub tab</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Tab 1</ion-title>
-        </ion-toolbar>
-      </ion-header>
-    
-      <ExploreContainer name="Tab 1 page" />
+
+    <ion-content>
+      <ion-router-outlet />
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonRouterOutlet } from '@ionic/vue';
 
-export default  {
-  name: 'Tab1',
-  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
+export default {
+  components: { IonContent, IonHeader, IonToolbar, IonTitle, IonPage, IonRouterOutlet },
 }
 </script>
