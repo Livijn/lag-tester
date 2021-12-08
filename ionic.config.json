@@ -1,0 +1,7 @@
+{
+  "name": "lag-tester",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
